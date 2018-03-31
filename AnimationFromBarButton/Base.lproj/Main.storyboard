@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aU3-M6-MJc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationFromBarButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DG-KQ-tnu">
+                                <rect key="frame" x="152" y="318.5" width="71" height="30"/>
+                                <state key="normal" title="Click Here"/>
+                                <connections>
+                                    <segue destination="zBA-VE-DLf" kind="popoverPresentation" identifier="anotherPopover" popoverAnchorView="6DG-KQ-tnu" id="aSi-iy-Kwv">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76099522961208255" green="1" blue="0.95613843892591155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6DG-KQ-tnu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xay-dB-212"/>
+                            <constraint firstItem="6DG-KQ-tnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtQ-U2-vSu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bsm-6j-AxN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="5j2-t2-CSA">
+                            <connections>
+                                <action selector="composeAction:" destination="BYZ-38-t0r" id="iaE-OD-Cny"/>
+                                <segue destination="Dm0-qr-G85" kind="popoverPresentation" identifier="popover" popoverAnchorBarButtonItem="5j2-t2-CSA" id="ec3-rG-CAD">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZFq-B6-xaG">
+            <objects>
+                <viewController id="zBA-VE-DLf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oL1-LS-yc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bv9-ak-M7v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="grR-ee-Kpw">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.54952696830000003" blue="0.99322834069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="350" height="200"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOI-q2-29b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="279"/>
+        </scene>
+        <!--Create Ticket-->
+        <scene sceneID="7Nf-Jm-h2g">
+            <objects>
+                <viewController id="b1G-Ff-ago" customClass="PopoverViewController" customModule="AnimationFromBarButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJK-r9-thw"/>
+                        <viewControllerLayoutGuide type="bottom" id="61O-7g-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ezw-DB-cWX">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-YU-qyB">
+                                <rect key="frame" x="142" y="255" width="66" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ugW-aj-f1w"/>
+                                </constraints>
+                                <state key="normal" title="Compose"/>
+                                <connections>
+                                    <action selector="composeAction:" destination="b1G-Ff-ago" eventType="touchUpInside" id="MEU-3L-L3N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-bS-wHd">
+                                <rect key="frame" x="4" y="69" width="342" height="181"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a5s-bS-wHd" firstAttribute="top" secondItem="RJK-r9-thw" secondAttribute="bottom" constant="5" id="8PR-yH-6n3"/>
+                            <constraint firstItem="61O-7g-6Um" firstAttribute="top" secondItem="Y4x-YU-qyB" secondAttribute="bottom" constant="5" id="JwM-Rw-V3y"/>
+                            <constraint firstItem="a5s-bS-wHd" firstAttribute="centerX" secondItem="Y4x-YU-qyB" secondAttribute="centerX" id="TPU-yb-7mi"/>
+                            <constraint firstItem="Y4x-YU-qyB" firstAttribute="top" secondItem="a5s-bS-wHd" secondAttribute="bottom" constant="5" id="Z5J-IE-NQx"/>
+                            <constraint firstItem="a5s-bS-wHd" firstAttribute="leading" secondItem="Ezw-DB-cWX" secondAttribute="leading" constant="4" id="ahZ-E3-B3B"/>
+                            <constraint firstAttribute="trailing" secondItem="a5s-bS-wHd" secondAttribute="trailing" constant="4" id="h9b-3Z-xQM"/>
+                            <constraint firstItem="a5s-bS-wHd" firstAttribute="leading" secondItem="Ezw-DB-cWX" secondAttribute="leadingMargin" constant="-12" id="yMN-YD-PD7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Ticket" id="Tdh-vw-l2R"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="350" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="300"/>
+                    <connections>
+                        <outlet property="textview" destination="a5s-bS-wHd" id="0k7-tF-sUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xk-ZK-orX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3152" y="-24.287856071964018"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x67-2O-jjm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aU3-M6-MJc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hlc-Ap-8LS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qNc-Jo-TAE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRM-F7-G6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.60000000000002" y="-546.47676161919048"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N2R-bG-fXE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dm0-qr-G85" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jU7-2v-wl8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b1G-Ff-ago" kind="relationship" relationship="rootViewController" id="jok-om-ntg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEV-sp-dph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2199.1999999999998" y="-8.5457271364317844"/>
+        </scene>
+    </scenes>
+</document>
