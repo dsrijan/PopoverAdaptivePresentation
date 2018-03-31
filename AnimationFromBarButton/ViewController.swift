@@ -17,6 +17,33 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
 
     @IBAction func composeAction(_ sender: Any) {
         
+        //        let popover = CustomViewController()
+        
+        //
+        
+        //        let nav = UINavigationController(rootViewController: popover)
+        
+        //
+        
+        //        nav.preferredContentSize = CGSize(width: 200, height: 300)
+        
+        //
+        
+        //        let popController = nav.popoverPresentationController
+        
+        //        popController?.permittedArrowDirections = .up
+        
+        //        popController?.delegate = self
+        
+        //        popController?.sourceView = self.view
+        
+        //        popController?.sourceRect = CGRect(x: 10, y: 30, width: 40, height: 50)
+        
+        //
+        
+        //        present(nav, animated: true, completion: nil)
+        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
